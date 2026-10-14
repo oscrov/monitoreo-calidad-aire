@@ -17,7 +17,6 @@ No implementa todavía alertas, umbrales, integración directa con sensores ni s
 ## Ejecutar en macOS
 
 ```bash
-cd MVP_Monitoreo_Aire_Oscar_Roman
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
