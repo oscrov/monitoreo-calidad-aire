@@ -24,7 +24,7 @@ class MVPTests(TestCase):
     def test_dashboard_filtra_por_sensor(self):
         response = self.client.get(reverse("dashboard"), {"sensor": "G3", "parametro": "pm25"})
         self.assertEqual(response.status_code, 200)
-        self.assertContains(response, "20,69")
+        self.assertContains(response, "20.69")
         self.assertNotContains(response, "443,27")
 
     def test_importacion_web_rechaza_csv_incompleto(self):
